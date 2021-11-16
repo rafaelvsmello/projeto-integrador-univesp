@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using ControleCelulasWebMvc.Models.Enums;
 
@@ -13,7 +14,7 @@ namespace ControleCelulasWebMvc.Models
         public StatusCadastro Status { get; set; }
         
         [Required(ErrorMessage = "O campo é obrigatório")]
-        [Display(Name = "Coordenador")]
+        [DisplayName("Coordenador")]
         public int CoordenadorId { get; set; }
         public Coordenador Coordenador { get; set; }
     }
